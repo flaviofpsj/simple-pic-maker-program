@@ -29,6 +29,7 @@ class AppState extends State<App> {
 	@override
 	Widget build(BuildContext context) {
 		return MaterialApp(
+			debugShowCheckedModeBanner: false,
 			home: Scaffold(
 				body: ImageList(images),
 				floatingActionButton: FloatingActionButton(
