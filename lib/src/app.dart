@@ -28,17 +28,17 @@ class AppState extends State<App> {
 
 	@override
 	Widget build(BuildContext context) {
-		return MaterialApp(
+		return new MaterialApp(
 			debugShowCheckedModeBanner: false,
-			home: Scaffold(
-				body: ImageList(images),
-				floatingActionButton: FloatingActionButton(
+			home: new Scaffold(
+				body: new ImageList(images),
+				floatingActionButton: new FloatingActionButton(
 					//call fetchImage method function
 					onPressed: fetchImage,
-					child: Icon(Icons.add),
+					child: new Icon(Icons.add),
 				),
-				appBar: AppBar(
-					title: Text('Lets see some images!'),
+				appBar: new AppBar(
+					title: new Text('Lets see some images!'),
 				),
 			),
 		);
@@ -49,16 +49,16 @@ class AppState extends State<App> {
 /*class App extends StatelessWidget {
 	@override
 	Widget build(BuildContext context) {
-		return MaterialApp(
-			home: Scaffold(
-				floatingActionButton: FloatingActionButton(
+		return new MaterialApp(
+			home: new Scaffold(
+				floatingActionButton: new FloatingActionButton(
 					onPressed: () {
 						print('Button has pressed!');
 					},
-					child: Icon(Icons.add),
+					child: new Icon(Icons.add),
 				),
-				appBar: AppBar(
-					title: Text('Lets see some images!'),
+				appBar: new AppBar(
+					title: new Text('Lets see some images!'),
 				),
 			),
 		);
